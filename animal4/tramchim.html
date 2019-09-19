@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body onload="init();" style="margin:0px;">
+<nav class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 col-sm-6 col-xs-12 "><a href="index.html"><img src="images/logo/logo3.png" class="center-block "></a></div>
+    <div class="col-md-1 col-md-offset-8">
+      <div id="myNav" class="overlay"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content"> <a href="indexl.html">TRANG CHỦ</a>
+          <li class="sub-menu"><a href="#">BÁO ĐỘNG <span class="caret"></span></a>
+            <ul class="container">
+              <li><a href="baodong.html" style="font-family:font-tuyen; font-size:18px;">ĐẠI DƯƠNG</a></li>
+              <li><a href="baodong2.html" style="font-family:font-tuyen; font-size:18px;">NAM CỰC & BẮC CỰC</a></li>
+              <li><a href="baodong3.html" style="font-family:font-tuyen; font-size:18px;">RỪNG</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu"><a href="#">HOẠT ĐỘNG <span class="caret"></span></a>
+            <ul class="container">
+              <li><a href="hoatdong.html" style="font-family:font-tuyen; font-size:18px;">BẢO VỆ ĐỘNG VẬT VÀ HỆ SINH THÁI</a></li>
+              <li><a href="hoatdong2.html" style="font-family:font-tuyen; font-size:18px;">NÂNG CAO NHẬN THỨC</a></li>
+              <li><a href="hoatdong3.html" style="font-family:font-tuyen; font-size:18px;">HỖ TRỢ</a></li>
+            </ul>
+          </li>
+          <li class="sub-menu"><a href="#">BẢN TIN<span class="caret"></span></a>
+            <ul class="container">
+              <li><a href="bantin.html" style="font-family:font-tuyen; font-size:18px;">TIN QUỐC TẾ </a></li>
+              <li><a href="bantin3.html" style="font-family:font-tuyen; font-size:18px;">TIN TRONG NƯỚC</a></li>
+              <li><a href="bantin2.html" style="font-family:font-tuyen; font-size:18px;">BIẾN ĐỔI KHÍ HẬU</a></li>
+            </ul>
+          </li>
+        </div>
+      </div>
+      <span style="font-size:30px;cursor:pointer;" class="openbtn center-block" onclick="openNav()">&#9776; </span> </div>
+  </div>
+</nav>
+<main>
+  <section>
+    <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1920px; height:1024px">
+      <canvas id="canvas" width="1920" height="1024" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+      <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:1920px; height:1024px; position: absolute; left: 0px; top: 0px; display: block;">
+        <div class="col-md-4  bantin1">
+          <h3 style="font-size: 36px">Vườn Quốc Gia Tràm Chim</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container">
+  <div class="row">
+  <div class="col-md-6">
+  <h3> Bạn có biết?</h3>
+    <p style="font-family: font-nd; font-size: 15px; color: #191919;letter-spacing:1px;text-align:left;">Vườn quốc gia Tràm Chim thuộc tỉnh Đồng Tháp là một khu đất ngập nước, được xếp trong hệ thống rừng đặc dụng của Việt Nam. Nơi đây có nhiều loài chim quý, đặc biệt là sếu đầu đỏ, một loài chim cực kỳ quý hiếm, có tên trong sách đỏ.
+    </p>
+    <p style="font-family: font-nd; font-size: 15px; color: #191919;letter-spacing:1px;text-align:left;">Chức năng của Tràm Chim bảo tồn hệ sinh thái đất ngập nước đặc trưng của vùng Đồng Tháp Mười, bảo vệ khu vực di trú cho các loài chim di cư, đặc biệt là loài chim sếu (Grus antigone)., bảo tồn các loài động-thực vật bản địa, các nguồn gen quý hiếm, và duy trì những điều kiện thích hợp cho việc nghiên cứu môi trường tự nhiên và bảo vệ tài nguyên thiên nhiên. Vườn quốc gia Tràm Chim, có diện tích 7.588 ha, thuộc huyện Tam Nông tỉnh Đồng Tháp. Đây là nơi cư trú của trên 100 loài động vật có xương sống, 40 loài cá và 147 loài chim nước. Trong đó, có 13 loài chim quý hiếm của thế giới. Đặc biệt là một loài chim hạc còn gọi là sếu đầu đỏ (Grus antigone) hay sếu cổ trụi.</p>
+   <p style="font-family: font-nd; font-size: 15px; color: #191919;letter-spacing:1px;text-align:left;">  Đến Tràm Chim, du khách sẽ bắt gặp ẩn hiện trước cảnh bao la của đất trời Đồng Tháp mênh mông đầy nước. Vào mùa khô từ tháng 12 đến tháng 5 dương lịch, đây là nơi cư trú của khoảng 60% quần thể sếu đầu đỏ, là loài chim cao nhất trong các loại chim bay trên thế giới. Với các yếu tố tự nhiên: trầm tích, địa mạo, và đặc tính đất khá đa dạng, từ đất xám, phát triển trên nền trầm tích cổ Pleistocen, đến những nhóm đất phù sa mới và đất phèn phát triển trên trầm tích trẻ Holocen đã góp phần làm đa dạng các quần xã thực vật tự nhiên. Kết quả khảo sát từ 2005–2006 ghi nhận được 130 loài thực vật, phân bố đơn thuần cũng như xen kẻ với nhau tạo thành những quần xã thực vật đặc trưng.</p>
+    </div>
+    <div class="col-md-6">
+    <h3>Tình hình hiện nay</h3>
+    <p style="font-family: font-nd; font-size: 15px; color: #191919;letter-spacing:1px;text-align:left;">Những vấn đề, thách thức mà Ban quản lý VQG đang quan tâm:<br>
+      
+      Áp lực của cộng đồng nghèo sống trong xung quanh vườn quốc gia Tràm Chim và sự phụ thuộc của cộng đồng, nhất là người nghèo lên tài nguyên thiên nhiên đất ngập nước bên trong. Chế độ bảo vệ nghiêm ngặt trong nhiều năm qua đã dẫn tới xung đột gay gắt giữa vườn quốc gia và cộng đồng và cũng đã không ngăn cản được sự xâm nhập vào bên trong để khai thác tài nguyên, dẫn đến sự suy kiệt tài nguyên (cá, củi, cỏ).
+      Vấn đề quản lý thủy văn cho phù hợp với nhu cầu của hệ sinh thái đất ngập nước, trong bối cảnh chế độ thủy văn toàn vùng Đồng Tháp Mười đã thay đổi do sự phát triển hệ thống kênh đào rộng khắp. Từ việc quản lý thủy văn chưa phù hợp đã làm thu hẹp diện tích đồng cỏ năng, nhất là năng kim (Eleocharis atropurpurea) làm cho không còn nguồn thức ăn cho chim sếu dẫn đến mật độ cá thể của loài chim nầy bị giảm theo hàng năm.<br>
+      
+      Mật độ cá thể sếu (Grus antigone) thay đổi qua từng năm ở VQG Tràm Chim (1986 - 2006)
+      Vấn đề phát triển du lịch sinh thái, sao cho vừa mang lại lợi ích cho cộng đồng, đóng góp cho bảo tồn mà không gây tác hại lên hệ sinh thái.
+      Sự xâm lấn của các loài ngoại lai xâm hại. Hiện nay vườn quốc gia Tràm Chim đang bị đe dọa nghiêm trọng bởi sự xâm lấn của cây mai dương (Mimosa pigra), một loài thực vật được IUCN xếp trong 100 loài ngoại lai xâm hại nguy hiểm nhất thế giới. Nếu không kiểm soát được, trong vòng 10-15 năm nữa, toàn bộ vườn quốc gia sẽ bị loài này xâm lấn thành loài độc tôn. Sự đa dạng sinh học sẽ mất đi hoàn toàn.</p>
+      </div>
+      </div>
+  </section>
+  <section class="container">
+    <h3>CÁC TỔ CHỨC LIÊN QUAN</h3>
+    <div class="col-md-12 tochuc">
+      <div class="logo"><a href="#"><img src="images/logo/WWF_logo1.png" class="img-responsive"></a></div>
+      <div class="logo"><img src="images/logo/SVW-Logo-Green-on-Clear-150.png" class="img-responsive"></div>
+      <div class="logo"><img src="images/logo/World_Animal_Protection_logo.png" class="img-responsive " ></div>
+      <div class="logo"><img src="images/logo/hdvvn.png" class="img-responsive"></div>
+      <div class="logo"><img src="images/logo/Wildlife_cs_logo15.png" class="img-responsive" ></div>
+    </div>
+  </section>
+</main>
+<footer class="container">
+  <div class="footerlast">
+    <ul>
+      <li><a href="#" class="icon"><img src="images/icon/facebook(1).png" class="img-responsive"></a><a href="#" class="icon"><img src="images/icon/twitter.png" class="img-responsive"></a></li>
+      <li class="footer-text">|<a href="thongtin.html">AnimalAssociation@2019</a>|</li>
+      <li><a class="icon"><img src="images/icon/pin.png" class="img-responsive"></a><a class="icon"><img src="images/icon/instagram.png"  class="img-responsive"></a></li>
+    </ul>
+  </div>
+</footer>
+<script src="js/jquery-3.4.1.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="vendors/owl.carousel.js"></script> 
+<script src="js/custom.js"></script> 
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script> 
+<script src="anim/canhchim.js"></script> 
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("9216BE18DE1CA04287E162203251281B");
+	var lib=comp.getLibrary();
+	handleComplete({},comp);
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	exportRoot = new lib.canhchim();
+	stage = new lib.Stage(canvas);	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;            
+			stage.tickOnUpdate = false;            
+			stage.update();            
+			stage.tickOnUpdate = true;		
+		}
+	}
+	makeResponsive(false,'both',false,1);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+</body>
+</html>
